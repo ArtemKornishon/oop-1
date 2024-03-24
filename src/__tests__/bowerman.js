@@ -1,9 +1,9 @@
 import Bowerman from '../bowerman';
 
-const checkClass = new Bowerman('John', 'bowman');
+const checkClass = new Bowerman('John', 'bowerman');
 const correctArg = {
   name: 'John',
-  type: 'bowman',
+  type: 'bowerman',
   health: 100,
   level: 1,
   attack: 25,
