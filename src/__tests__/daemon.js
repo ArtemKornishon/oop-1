@@ -1,5 +1,6 @@
-import Daemon from '../Daemon';
+import Daemon from '../daemon';
 
+test('Creating new Character', () => {
 const checkClass = new Daemon('John', 'daemon');
 const correctArg = {
   name: 'John',
@@ -10,6 +11,5 @@ const correctArg = {
   defence: 40,
 };
 
-test('Creating new Character', () => {
   expect(checkClass).toEqual(correctArg);
 });

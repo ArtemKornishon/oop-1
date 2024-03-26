@@ -1,5 +1,6 @@
-import Swordsman from '../Swordsman';
+import Swordsman from '../swordsman';
 
+test('Creating new Character', () => {
 const checkClass = new Swordsman('John', 'swordsman');
 const correctArg = {
   name: 'John',
@@ -10,6 +11,5 @@ const correctArg = {
   defence: 10,
 };
 
-test('Creating new Character', () => {
   expect(checkClass).toEqual(correctArg);
 });

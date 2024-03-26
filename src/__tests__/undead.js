@@ -1,5 +1,6 @@
-import Undead from '../Undead';
+import Undead from '../undead';
 
+test('Creating new Character', () => {
 const checkClass = new Undead('John', 'undead');
 const correctArg = {
   name: 'John',
@@ -10,6 +11,5 @@ const correctArg = {
   defence: 25,
 };
 
-test('Creating new Character', () => {
   expect(checkClass).toEqual(correctArg);
 });

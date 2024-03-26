@@ -1,5 +1,6 @@
-import Magician from '../Magician';
+import Magician from '../magician';
 
+test('Creating new Character', () => {
 const checkClass = new Magician('John', 'magician');
 const correctArg = {
   name: 'John',
@@ -10,6 +11,5 @@ const correctArg = {
   defence: 40,
 };
 
-test('Creating new Character', () => {
   expect(checkClass).toEqual(correctArg);
 });

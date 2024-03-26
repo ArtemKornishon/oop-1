@@ -1,5 +1,6 @@
-import Zombie from '../Zombie';
+import Zombie from '../zombie';
 
+test('Creating new Character', () => {
 const checkClass = new Zombie('John', 'zombie');
 const correctArg = {
   name: 'John',
@@ -10,6 +11,5 @@ const correctArg = {
   defence: 10,
 };
 
-test('Creating new Character', () => {
   expect(checkClass).toEqual(correctArg);
 });
